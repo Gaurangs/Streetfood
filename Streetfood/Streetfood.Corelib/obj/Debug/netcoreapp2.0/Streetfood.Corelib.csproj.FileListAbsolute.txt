@@ -1,0 +1,9 @@
+E:\streetfood\Streetfood.Corelib\bin\Debug\netcoreapp2.0\Streetfood.Corelib.deps.json
+E:\streetfood\Streetfood.Corelib\bin\Debug\netcoreapp2.0\Streetfood.Corelib.dll
+E:\streetfood\Streetfood.Corelib\bin\Debug\netcoreapp2.0\Streetfood.Corelib.pdb
+E:\streetfood\Streetfood.Corelib\obj\Debug\netcoreapp2.0\Streetfood.Corelib.csprojResolveAssemblyReference.cache
+E:\streetfood\Streetfood.Corelib\obj\Debug\netcoreapp2.0\Streetfood.Corelib.csproj.CoreCompileInputs.cache
+E:\streetfood\Streetfood.Corelib\obj\Debug\netcoreapp2.0\Streetfood.Corelib.AssemblyInfoInputs.cache
+E:\streetfood\Streetfood.Corelib\obj\Debug\netcoreapp2.0\Streetfood.Corelib.AssemblyInfo.cs
+E:\streetfood\Streetfood.Corelib\obj\Debug\netcoreapp2.0\Streetfood.Corelib.dll
+E:\streetfood\Streetfood.Corelib\obj\Debug\netcoreapp2.0\Streetfood.Corelib.pdb
