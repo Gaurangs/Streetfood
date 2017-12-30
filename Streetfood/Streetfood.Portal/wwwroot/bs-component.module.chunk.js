@@ -28,8 +28,8 @@ var BsComponentRoutingModule = /** @class */ (function () {
     }
     BsComponentRoutingModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */].forChild(routes)],
-            exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */]]
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */].forChild(routes)],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */]]
         })
     ], BsComponentRoutingModule);
     return BsComponentRoutingModule;
@@ -135,8 +135,8 @@ var BsComponentModule = /** @class */ (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_4__bs_component_routing_module__["a" /* BsComponentRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["e" /* ReactiveFormsModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["i" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__["f" /* NgbModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_7__shared__["b" /* PageHeaderModule */]
             ],
@@ -306,7 +306,7 @@ var ButtonsComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../admin/app/layout/bs-component/components/buttons/buttons.component.html"),
             styles: [__webpack_require__("../../../../../admin/app/layout/bs-component/components/buttons/buttons.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]])
     ], ButtonsComponent);
     return ButtonsComponent;
 }());

@@ -4,7 +4,6 @@ import { routerTransition } from '../router.animations';
 import { NgForm } from '@angular/forms';
 import { AuthenticationService } from '../shared/services/authentication.service';
 
-
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
@@ -21,7 +20,7 @@ export class LoginComponent implements OnInit {
         (data: any) => {
             if (data) {
                 resEmail = data;
-                this.router.navigate(['/dashboard']);
+                 this.router.navigate(['/dashboard']);
             }
         },
         error => {

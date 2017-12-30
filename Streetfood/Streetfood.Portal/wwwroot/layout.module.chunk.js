@@ -52,7 +52,7 @@ var HeaderComponent = /** @class */ (function () {
         this.router = router;
         this.pushRightClass = 'push-right';
         this.router.events.subscribe(function (val) {
-            if (val instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* NavigationEnd */] &&
+            if (val instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* NavigationEnd */] &&
                 window.innerWidth <= 992 &&
                 _this.isToggled()) {
                 _this.toggleSidebar();
@@ -84,7 +84,7 @@ var HeaderComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../admin/app/layout/components/header/header.component.html"),
             styles: [__webpack_require__("../../../../../admin/app/layout/components/header/header.component.scss")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__["c" /* TranslateService */], __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]])
     ], HeaderComponent);
     return HeaderComponent;
 }());
@@ -96,7 +96,7 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "../../../../../admin/app/layout/components/sidebar/sidebar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"sidebar\" [ngClass]=\"{sidebarPushRight: isActive}\">\n    <ul class=\"list-group\">\n        <a routerLink=\"/dashboard\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-dashboard\"></i>&nbsp;{{ 'Dashboard' | translate }}\n        </a>\n        <a [routerLink]=\"['/charts']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-bar-chart-o\"></i>&nbsp;{{ 'Charts' | translate }}\n        </a>\n        <a [routerLink]=\"['/tables']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Tables' | translate }}\n        </a>\n        <a [routerLink]=\"['/forms']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Forms' | translate }}\n        </a>\n        <a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-desktop\"></i>&nbsp;{{ 'Boostrap Element' | translate }}\n        </a>\n        <a [routerLink]=\"['/grid']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-wrench\"></i>&nbsp;{{ 'Boostrap Grid' | translate }}\n        </a>\n        <a [routerLink]=\"['/components']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-th-list\"></i>&nbsp;{{ 'Component' | translate }}\n        </a>\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('pages')\">\n                <span><i class=\"fa fa-plus\"></i>&nbsp; {{ 'Menu' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'pages'\">\n                <ul class=\"submenu\">\n                    <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Submenu' | translate }}</span></a>\n                    </li>\n                    <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Submenu' | translate }}</span></a>\n                    </li>\n                    <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Submenu' | translate }}</span></a>\n                    </li>\n                </ul>\n            </li>\n        </div>\n        <a [routerLink]=\"['/blank-page']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-file-o\"></i>&nbsp;{{ 'Blank Page' | translate }}\n        </a>\n        <a class=\"list-group-item more-themes\" href=\"http://www.strapui.com/\" >\n            {{ 'More Theme' | translate }}\n        </a>\n    </ul>\n</nav>\n"
+module.exports = "<nav class=\"sidebar\" [ngClass]=\"{sidebarPushRight: isActive}\">\n    <ul class=\"list-group\">\n        <a routerLink=\"/dashboard\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-dashboard\"></i>&nbsp;{{ 'Dashboard' | translate }}\n        </a>\n        <a [routerLink]=\"['/charts']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-bar-chart-o\"></i>&nbsp;{{ 'Charts' | translate }}\n        </a>\n        <a [routerLink]=\"['/tables']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-table\"></i>&nbsp;{{ 'Tables' | translate }}\n        </a>\n        <a [routerLink]=\"['/forms']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-edit\"></i>&nbsp;{{ 'Forms' | translate }}\n        </a>\n        <a [routerLink]=\"['/bs-element']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-desktop\"></i>&nbsp;{{ 'Boostrap Element' | translate }}\n        </a>\n        <a [routerLink]=\"['/grid']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-fw fa-wrench\"></i>&nbsp;{{ 'Boostrap Grid' | translate }}\n        </a>\n        <a [routerLink]=\"['/components']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-th-list\"></i>&nbsp;{{ 'Component' | translate }}\n        </a>\n        <div class=\"nested-menu\">\n            <a class=\"list-group-item\" (click)=\"addExpandClass('pages')\">\n                <span><i class=\"fa fa-plus\"></i>&nbsp; {{ 'Menu' | translate }}</span>\n            </a>\n            <li class=\"nested\" [class.expand]=\"showMenu === 'pages'\">\n                <ul class=\"submenu\">\n                    <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Submenu' | translate }}</span></a>\n                    </li>\n                    <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Submenu' | translate }}</span></a>\n                    </li>\n                    <li>\n                        <a href=\"javascript:void(0)\"><span>{{ 'Submenu' | translate }}</span></a>\n                    </li>\n                </ul>\n            </li>\n        </div>\n        <a [routerLink]=\"['/roles']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-file-o\"></i>&nbsp;{{ 'Blank Page' | translate }}\n        </a>\n        <a [routerLink]=\"['/addrole']\" [routerLinkActive]=\"['router-link-active']\" class=\"list-group-item\">\n            <i class=\"fa fa-file-o\"></i>&nbsp;{{ 'Blank Page' | translate }}\n        </a>        \n        <a class=\"list-group-item more-themes\" href=\"http://www.strapui.com/\" >\n            {{ 'More Theme' | translate }}\n        </a>\n    </ul>\n</nav>\n"
 
 /***/ }),
 
@@ -191,7 +191,10 @@ var routes = [
             { path: 'bs-element', loadChildren: './bs-element/bs-element.module#BsElementModule' },
             { path: 'grid', loadChildren: './grid/grid.module#GridModule' },
             { path: 'components', loadChildren: './bs-component/bs-component.module#BsComponentModule' },
-            { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' }
+            { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
+            { path: 'addrole/:id', loadChildren: '../role/addeditrole/addrole.module#AddRoleModule' },
+            { path: 'addrole', loadChildren: '../role/addeditrole/addrole.module#AddRoleModule' },
+            { path: 'roles', loadChildren: '../role/roles/roles.module#RolesModule' },
         ]
     }
 ];
@@ -200,8 +203,8 @@ var LayoutRoutingModule = /** @class */ (function () {
     }
     LayoutRoutingModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */].forChild(routes)],
-            exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */]]
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */].forChild(routes)],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */]]
         })
     ], LayoutRoutingModule);
     return LayoutRoutingModule;

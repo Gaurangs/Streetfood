@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="admin\" />
+    <Compile Remove="admin\app\shared\filter-table\**" />
+    <Content Remove="admin\app\shared\filter-table\**" />
+    <EmbeddedResource Remove="admin\app\shared\filter-table\**" />
+    <None Remove="admin\app\shared\filter-table\**" />
   </ItemGroup>
 
   <ItemGroup>

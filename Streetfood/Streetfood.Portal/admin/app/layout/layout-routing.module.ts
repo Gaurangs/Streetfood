@@ -15,7 +15,10 @@ const routes: Routes = [
             { path: 'bs-element', loadChildren: './bs-element/bs-element.module#BsElementModule' },
             { path: 'grid', loadChildren: './grid/grid.module#GridModule' },
             { path: 'components', loadChildren: './bs-component/bs-component.module#BsComponentModule' },
-            { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' }
+            { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
+            { path: 'addrole/:id', loadChildren: '../role/addeditrole/addrole.module#AddRoleModule' },
+            { path: 'addrole', loadChildren: '../role/addeditrole/addrole.module#AddRoleModule' },
+            { path: 'roles', loadChildren: '../role/roles/roles.module#RolesModule' },
         ]
     }
 ];

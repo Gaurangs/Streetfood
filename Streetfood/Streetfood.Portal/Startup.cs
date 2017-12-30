@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Streetfood.Corelib.Repository;
 using Streetfood.Corelib;
+using Streetfood.Corelib.MongoHelperclass;
+using Streetfood.Corelib.Interface;
 
 namespace Streetfood.Portal
 {

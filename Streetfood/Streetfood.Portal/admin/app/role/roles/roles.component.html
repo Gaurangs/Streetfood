@@ -1,0 +1,44 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'User Role'" [icon]="'fa-edit'"></app-page-header>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="example-header">
+                <mat-form-field>                   
+                  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+                </mat-form-field>
+              </div>
+              
+              <div class="example-container mat-elevation-z8">
+            <mat-table [dataSource]="dataSource" matSort>
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="rolename">
+                      <mat-header-cell *matHeaderCellDef mat-sort-header> Role </mat-header-cell>
+                      <mat-cell *matCellDef="let roles"> {{roles.roleName}} </mat-cell>
+                    </ng-container>
+                
+                    <!-- Weight Column -->
+                    <ng-container matColumnDef="rolepermissionmenus">
+                      <mat-header-cell *matHeaderCellDef mat-sort-header> Role Permission Menus </mat-header-cell>
+                      <mat-cell *matCellDef="let roles"> {{roles.rolePermissionMenus}} </mat-cell>
+                    </ng-container>
+                
+                    <!-- Color Column -->
+                    <ng-container matColumnDef="isactive">
+                      <mat-header-cell *matHeaderCellDef> IsActive </mat-header-cell>
+                      <mat-cell *matCellDef="let roles"><mat-checkbox  [(ngModel)]="roles.isActive" [checked]="roles.isActive" ></mat-checkbox></mat-cell>
+                    </ng-container>
+                
+                    <!-- Color Column -->
+                    <ng-container matColumnDef="editrole">
+                      <mat-header-cell *matHeaderCellDef> Edit Role </mat-header-cell>
+                      <mat-cell *matCellDef="let roles"><a mat-raised-button color="primary" [routerLink]="['/addrole',roles._id]">Edit Role</a></mat-cell>
+                    </ng-container>                    role/addeditrole
+                    
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let roles; columns: displayedColumns;"></mat-row>
+                  </mat-table>
+                  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+                </div>
+        </div>        
+    </div>    
+</div>

@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Conventions;
+
+namespace Streetfood.Corelib.MongoHelperclass
+{
+    public static class MongoClassMapHelper
+    {
+        private static object _lock = new object();
+
+
+        /// <summary>
+        /// Registers the convention packs.
+        /// </summary>
+        public static void RegisterConventionPacks()
+        {
+            lock (_lock)
+            {
+                var conventionPack = new ConventionPack();
+                conventionPack.Add(new IgnoreIfNullConvention(true));
+                ConventionRegistry.Register("ConventionPack", conventionPack, t => true);
+            }
+        }
+
+        /// <summary>
+        /// Setups the mappings.
+        /// </summary>
+        public static void SetupClassMap()
+        {
+            lock (_lock)
+            {
+
+                if (!BsonClassMap.IsClassMapRegistered(typeof(Entity)))
+                {
+                    BsonClassMap.RegisterClassMap<Entity>(
+                        (classMap) =>
+                        {
+                            classMap.AutoMap();
+                            classMap.MapIdProperty(p => p.Id);
+                            classMap.MapExtraElementsProperty(p => p.Metadata);
+                        });
+                }
+            }
+        }
+    }
+}
